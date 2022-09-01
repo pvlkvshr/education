@@ -1,0 +1,26 @@
+.section-menu {
+    color: var(--title-text-color);
+}
+
+.section-menu:hover
+.section-menu:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+.hero {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.hero .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.hero .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}

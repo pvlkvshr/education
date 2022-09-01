@@ -1,16 +1,49 @@
 .hero-title {
     color:var(--title-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-align: center;
 }
 
 .section-title {
     color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.section-title .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.section-title .name .profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 .feature-list .title {
     color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.feature-list .title .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .button.primary {
     color:var(--primary-bg-color);
     background-color:var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-decoration: none;
 }

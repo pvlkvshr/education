@@ -8,22 +8,41 @@
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
 }
 
 .logo {
     color: var(--title-text-color);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo:hover,
 .logo:focus {
     color: var(--accent-color);
 }
+
+.accent-blue {
+    color: var(--accent-color)
+}
+
+.accent-black {
+    color: var(--title-text-color);
+}
+
 .list {
     list-style: none;
 }
 
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -37,6 +56,10 @@ body {
 
 .site-contact .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-contact .link:hover,
@@ -46,4 +69,17 @@ body {
 
 .site-contact .link.current {
     color: var(--accent-color);
+}
+
+.footer-adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
