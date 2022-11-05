@@ -1,5 +1,6 @@
 .section-menu {
     color: var(--title-text-color);
+    cursor: pointer;
 }
 
 .section-menu:hover
@@ -7,6 +8,10 @@
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 }
+
+/* .container .list {
+    margin-bottom: 34px;
+} */
 
 .hero {
     color: var(--title-text-color);
@@ -17,13 +22,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-top: 20px;
 }
 
 .hero .text {
     font-size: 16px;
     line-height: 1.87;
-}
-
-.button-filter {
-    cursor: pointer
+    margin-top: 4px;
 }

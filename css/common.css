@@ -5,6 +5,14 @@
     --primary-bg-color: #ffffff;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1440px;
+}
+
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
@@ -12,6 +20,10 @@ body {
 }
 
 .logo {
+    display: flex;
+    margin-right: 93px;
+    margin-left: auto;
+
     color: var(--title-text-color);
     font-family: raleway, sans-serif;
     font-weight: 700;
@@ -25,6 +37,20 @@ body {
     color: var(--accent-color);
 }
 
+.page-header {
+    background-color: var(--primary-bg-color);;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav .site-contact {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .accent-blue {
     color: var(--accent-color)
 }
@@ -34,10 +60,28 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -54,7 +98,22 @@ body {
     color: var(--accent-color);
 }
 
+.site-contact {
+    display: flex;
+}
+
+.site-contact .item {
+    margin-right: 50px;
+}
+
+.site-contact .item + .item {
+    margin-right: 0px;
+}
+
 .site-contact .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
