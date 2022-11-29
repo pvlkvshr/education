@@ -1,10 +1,17 @@
+.container .list {
+    display: flex;
+}
+
+/* Block hero */
+
 .hero {
     text-align: center;
 }
 
 .hero-title {
-    margin-top: 200px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+
     color:var(--title-text-color);
     font-weight: 900;
     font-size: 44px;
@@ -12,19 +19,29 @@
     text-align: center;
 }
 
+.button.primary {
+    padding: 30px 0px 0px 0px;
+
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
 .section {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding: 94px 0px 94px 0px;
 }
 
 .section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0px;
 }
 
 .section-title {
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding: 94px 0px 50px 0px;
+    margin: 0px;
+
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -43,47 +60,93 @@
     line-height: 1.18;
 }
 
-.work-list {
-    background-color: #F5F4FA;
+.feature-list {
+    display: flex;
+    padding-bottom: 94px;
+    justify-content: center;
 }
 
 .feature-list .title {
-    margin-top: 94px;
-    margin-bottom: 10px;
+    padding: 94px 0px 10px 0px;
+    margin: 0px;
+    
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }
 
-.feature-list .text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 .feature-list .title .text {
-    margin-top: 10px;
+    padding-top: 10px;
+
     font-size: 14px;
     line-height: 1.71;
 }
 
 .feature-list .title .work-list .title {
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 0px;
 }
 
 .feature-list p {
-    margin-top: 0;
-    margin-bottom: 94;
+    padding: 0px 0px 94px 0px;
+    margin: 0px;
 }
 
-.button.primary {
-    margin-top: 30px;
-    margin-bottom: 200px;
-    color:var(--primary-bg-color);
-    background-color:var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    text-decoration: none;
+.feature-list .item {
+    padding: 30px 0px 94px 0px;
+
+    width: 270px;
+    height: 98px;
+}
+
+.feature-list .item:last-child {
+    padding-right: 0px;
+}
+
+.skills .list {
+    padding-bottom: 94px;
+    justify-content: center;
+}
+
+.skills .list .item {
+    padding: 0px 30px 0px 0px;
+}
+
+.skills .list .item+.item+.item {
+    padding-right: 0px;
+}
+
+.container .portfolio {
+    padding-top: 0px;
+}
+
+.work-list {
+    background-color: #F5F4FA;
+}
+
+.work-list .list {
+    padding-bottom: 94px;
+    justify-content: center;
+}
+
+.work-list .item {
+    padding-right: 30px;
+}
+
+.work-list .item:last-child {
+    padding-right: 0px;
+}
+
+.work-list .name {
+    padding: 30px 0px 10px 0px;
+    margin: 0px;
+
+    text-align: center;
+}
+
+.work-list .profession {
+    padding-bottom: 30px;
+    margin: 0px;
+
+    text-align: center;
 }

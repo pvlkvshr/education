@@ -1,3 +1,17 @@
+.button-list {
+    display: flex;
+    padding: 94px 0px 50px 0px;
+    justify-content: center;
+}
+
+.button-list .item {
+    padding-right: 8px;
+}
+
+.button-list .item:last-child {
+    padding-right: 0px;
+}
+
 .section-menu {
     color: var(--title-text-color);
     cursor: pointer;
@@ -9,24 +23,49 @@
     background-color: var(--accent-color);
 }
 
-/* .container .list {
-    margin-bottom: 34px;
-} */
+.hero-list {
+    display: flex;
+    padding-bottom: 94px;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.hero {
     color: var(--title-text-color);
+}
+
+.hero-list .item {
+    padding: 0px 30px 30px 0px;
+
+    width: calc((100% - 60px) / 3);
+    height: 404px;
+}
+
+.hero-list .item:nth-last-child(-n + 3) {
+    padding-bottom: 0px;
+}
+
+.hero-list .item:nth-child(3n + 3) {
+    padding-right: 0px;
+}
+
+.hero-list a {
     text-decoration: none;
 }
 
-.hero .title {
+.hero-list .title {
+    padding: 20px 24px 4px 24px;
+    margin: 0px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    margin-top: 20px;
+    color: var(--title-text-color);
 }
 
-.hero .text {
+.hero-list .text {
+    padding: 0px 24px 20px 24px;
+    margin: 0px;
+
     font-size: 16px;
     line-height: 1.87;
-    margin-top: 4px;
+    color: #757575;
 }
