@@ -39,7 +39,7 @@
 }
 
 .section-title {
-    padding: 94px 0px 50px 0px;
+    padding-bottom: 50px;
     margin: 0px;
 
     color:var(--title-text-color);
@@ -61,8 +61,7 @@
 }
 
 .feature-list {
-    display: flex;
-    padding-bottom: 94px;
+    margin: auto;
     justify-content: center;
 }
 
@@ -93,7 +92,7 @@
 }
 
 .feature-list .item {
-    padding: 30px 0px 94px 0px;
+    padding: 94px 30px 118px 0px;
 
     width: 270px;
     height: 98px;
@@ -101,10 +100,11 @@
 
 .feature-list .item:last-child {
     padding-right: 0px;
+
+    width: 270px;
 }
 
 .skills .list {
-    padding-bottom: 94px;
     justify-content: center;
 }
 
@@ -116,8 +116,8 @@
     padding-right: 0px;
 }
 
-.container .portfolio {
-    padding-top: 0px;
+.section.portfolio {
+    padding-bottom: 43px;
 }
 
 .work-list {
@@ -125,7 +125,6 @@
 }
 
 .work-list .list {
-    padding-bottom: 94px;
     justify-content: center;
 }
 

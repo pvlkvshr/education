@@ -1,6 +1,10 @@
+.section {
+    padding: 94px 0px 94px 0px;
+}
+
 .button-list {
     display: flex;
-    padding: 94px 0px 50px 0px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
@@ -25,7 +29,7 @@
 
 .hero-list {
     display: flex;
-    padding-bottom: 94px;
+    padding: 0px 8px 0px 8px;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -34,7 +38,6 @@
 
 .hero-list .item {
     padding: 0px 30px 30px 0px;
-
     width: calc((100% - 60px) / 3);
     height: 404px;
 }
@@ -64,6 +67,7 @@
 .hero-list .text {
     padding: 0px 24px 20px 24px;
     margin: 0px;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
 
     font-size: 16px;
     line-height: 1.87;
