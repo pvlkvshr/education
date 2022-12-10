@@ -66,7 +66,7 @@
 }
 
 .feature-list .title {
-    padding: 94px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
     margin: 0px;
     
     color:var(--title-text-color);
@@ -87,15 +87,13 @@
 }
 
 .feature-list p {
-    padding: 0px 0px 94px 0px;
-    margin: 0px;
+        margin: 0px;
 }
 
 .feature-list .item {
-    padding: 94px 30px 118px 0px;
+    padding: 0px 30px 0px 0px;
 
-    width: 270px;
-    height: 98px;
+    width: 300px;
 }
 
 .feature-list .item:last-child {
@@ -114,10 +112,6 @@
 
 .skills .list .item+.item+.item {
     padding-right: 0px;
-}
-
-.section.portfolio {
-    padding-bottom: 43px;
 }
 
 .work-list {
