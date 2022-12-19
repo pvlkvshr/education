@@ -3,6 +3,7 @@
     --title-text-color: #000000;
     --accent-color: #18a0fb;
     --primary-bg-color: #ffffff;
+    --additional-text-color: rgba(117, 117, 117, 1);
 }
 
 .container {
@@ -23,14 +24,17 @@ body {
 
 .logo {
     display: flex;
-    padding-right: 93px;
+    margin-right: 93px;
+    padding: 25px 0px 25px 0px;
 
     color: var(--title-text-color);
-    font-family: raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 31px;
     text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .logo:hover,
@@ -86,16 +90,12 @@ body {
     margin-bottom: 0px;
 }
 
-.site-nav {
-    display: flex;
-}
-
 .site-nav .item {
-    padding-right: 50px;
+    margin: 0px 50px 0px 0px;
 }
 
 .site-nav .item:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .site-nav .link {
@@ -105,8 +105,11 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -119,21 +122,25 @@ body {
 }
 
 .site-contact .item {
-    padding-right: 50px;
+    margin: 0px 50px 0px 0px;
 }
 
 .site-contact .item + .item {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .site-contact .link {
+    display: block;
     padding: 32px 0px 32px 0px;
 
-    color: var(--title-text-color);
+    color: var(--additional-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.02em;
 }
 
 .site-contact .link:hover,
@@ -156,33 +163,45 @@ body {
 }
 
 .footer-nav-contact .logo {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 1170px 0px 0px;
+
+    width: 145px;
 }
 
 .footer-site-contact {
+    margin: 20px 0px 0px 0px;
     padding: 0px;
-    margin: 0px;
 }
 
 .footer p {
     margin: 0px;
     color: green;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 
 .footer-site-contact .link {    
     color: green;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .footer-site-contact .item {
-   padding-bottom: 9px;
+   margin: 0px 0px 9px 0px;
    list-style: none;
 }
 
 .footer-site-contact .item:last-child {
-    padding-bottom: 0px;
+    margin-bottom: 0px;
 }

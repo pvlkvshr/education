@@ -2,51 +2,64 @@
     display: flex;
 }
 
+.section {
+    padding: 0px 0px 94px 0px;
+}
+
 /* Block hero */
 
 .hero {
+    padding: 200px 0px 200px 0px;
     text-align: center;
 }
 
 .hero-title {
-    padding-bottom: 30px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
 
     color:var(--title-text-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;    
-    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    font-family: 'Roboto';
+    font-style: normal;
 }
 
 .button.primary {
-    padding: 30px 0px 0px 0px;
+    padding: 10px 32px 10px 32px;
 
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
     text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    letter-spacing: 0.06em;
 }
 
-.section {
+.section.value {
     padding: 94px 0px 94px 0px;
 }
 
-.section.no-padding {
-    padding: 0px;
-}
-
 .section-title {
-    padding-bottom: 50px;
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
 
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .section-title .name {
@@ -66,20 +79,17 @@
 }
 
 .feature-list .title {
-    padding: 0px 0px 10px 0px;
-    margin: 0px;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
     
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-}
-
-.feature-list .title .text {
-    padding-top: 10px;
-
-    font-size: 14px;
-    line-height: 1.71;
+    font-family: 'Roboto';
+    font-style: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .feature-list .title .work-list .title {
@@ -87,17 +97,26 @@
 }
 
 .feature-list p {
-        margin: 0px;
+    margin: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--additional-text-color);
 }
 
 .feature-list .item {
-    padding: 0px 30px 0px 0px;
+    margin: 0px 30px 0px 0px;
+    /* padding: 0px 30px 0px 0px; */
 
     width: 300px;
 }
 
 .feature-list .item:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 
     width: 270px;
 }
@@ -107,14 +126,15 @@
 }
 
 .skills .list .item {
-    padding: 0px 30px 0px 0px;
+    margin: 0px 30px 0px 0px;
 }
 
 .skills .list .item+.item+.item {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .work-list {
+    padding: 94px 0px 94px 0px;
     background-color: #F5F4FA;
 }
 
@@ -123,23 +143,34 @@
 }
 
 .work-list .item {
-    padding-right: 30px;
+    margin: 0px 30px 0px 0px;
 }
 
 .work-list .item:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .work-list .name {
-    padding: 30px 0px 10px 0px;
-    margin: 0px;
+    margin: 30px 0px 10px 0px;
 
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
 }
 
 .work-list .profession {
-    padding-bottom: 30px;
-    margin: 0px;
+    margin: 0px 0px 30px 0px;
 
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--additional-text-color);
 }
