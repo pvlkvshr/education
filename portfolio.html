@@ -16,8 +16,8 @@
 </head>
 <body>
     <header class="page-header main-nav">
-        <div class="container main-nav">
-            <nav class="container main-nav">
+        <div class="container header">
+            <nav class="container main-nav-menu">
                 <a href="./index.html" class="logo">
                     <span class="accent-blue">Web</span>
                     <span class="accent-black">Studio</span>
@@ -28,18 +28,32 @@
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <nav class="container main-nav">
+            <nav class="container main-nav-contact">
                 <ul class="site-contact list">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">ikivshar@mail.ru</a></li>
-                    <li class="item"><a href="tel:+79300615533" class="link">+7 930 061 55 33</a></li>
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="link">
+                            <svg class="icon-envelope" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            ikivshar@mail.ru
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+79300615533" class="link">
+                            <svg class="icon-smartphone" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +7 930 061 55 33
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <!-- <h1></h1> -->
            <section class="section">
             <div class="container">
+                <h1 class="portfolio-title">Портфолио</h1>
                 <ul class="button-list list">
                     <li class="item"><button type="button" class="section-menu link">Все</button></li>
                     <li class="item"><button type="button" class="section-menu link">Вэб-сайты</button></li>
@@ -49,88 +63,121 @@
                 </ul>
                 <ul class="hero-list list">
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/laptop.jpg" width="370" alt="Ноутбук">
+                        <img class="image" src="./images/laptop.jpg" width="370" height="294" alt="Ноутбук">
+                        <div class="card">
                             <h2 class="title">Технокряк</h2>
                             <p class="text">Вэб-сайт</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/basketball.jpg" width="370" alt="Баскетбол">
+                        <img class="image" src="./images/basketball.jpg" width="370" height="294" alt="Баскетбол">
+                        <div class="card">
                             <h2 class="title">Постер New Orlean vs Golden Star</h2>
                             <p class="text">Дизайн</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/restaurant-logo.jpg" width="370" alt="Ресторан">
+                        <img class="image" src="./images/restaurant-logo.jpg" width="370" height="294" alt="Ресторан">
+                        <div class="card">
                             <h2 class="title">Ресторан Seafood</h2>
                             <p class="text">Приложение</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/headset.jpg" width="370" alt="Наушники">
+                        <img class="image" src="./images/headset.jpg" width="370" height="294" alt="Наушники">
+                        <div class="card">
                             <h2 class="title">Проект Prime</h2>
                             <p class="text">Маркетинг</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/boxes.jpg" width="370" alt="Ящики">
+                        <img class="image" src="./images/boxes.jpg" width="370" height="294" alt="Ящики">
+                        <div class="card">
                             <h2 class="title">Проект Boxes</h2>
                             <p class="text">Приложение</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/screen.jpg" width="370" alt="Монитор">
+                        <img class="image" src="./images/screen.jpg" width="370" height="294" alt="Монитор">
+                        <div class="card">
                             <h2 class="title">Inspiration has no Borders</h2>
                             <p class="text">Вэб-сайт</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/journal.jpg" width="370" alt="Журнал">
+                        <img class="image" src="./images/journal.jpg" width="370" height="294" alt="Журнал">
+                        <div class="card">
                             <h2 class="title">Издание Limited Edition</h2>
                             <p class="text">Дизайн</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/label.jpg" width="370" alt="Этикетка">
+                        <img class="image" src="./images/label.jpg" width="370" height="294" alt="Этикетка">
+                        <div class="card">
                             <h2 class="title">Прокет LAB</h2>
                             <p class="text">Маркетинг</p>
-                        </a>
+                        </div>
                     </li>
                     <li class="item">
-                        <a href="" class="hero">
-                            <img src="./images/printing.jpg" width="370" alt="Печатание на ноутбуке">
+                        <img class="image" src="./images/printing.jpg" width="370" height="294" alt="Печатание на ноутбуке">
+                        <div class="card">
                             <h2 class="title">Growing Business</h2>
                             <p class="text">Приложение</p>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
            </section>
     </main>
-    <footer class="page-header">
+    <footer class="page-footer">
         <div class="container footer">
-            <nav class="footer-nav-contact">
+            <div class="footer-nav-contact">
                 <a href="./index.html" class="logo">
                     <span class="accent-blue">Web</span>
-                    <span class="accent-black">Studio</span>
+                    <span class="accent-white">Studio</span>
                 </a>
                 <ul class="footer-site-contact">
                     <li class="item">
                         <p>г. Усинск, ул. Парковая, д. 6</p>
                     </li>
-                    <li class="item"><a href="tel:+79300615533" class="link">+7 930 061 55 33</a></li>
                     <li class="item"><a href="mailto:ikivshar@mail.ru" class="link">ikivshar@mail.ru</a></li>
+                    <li class="item"><a href="tel:+79300615533" class="link">+7 930 061 55 33</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-follow">
+                <p class="follow">Присоединяйтесь</p>
+                <ul class="footer-link-list">
+                    <li class="social-network">
+                        <a href="" class="icon-social-network">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network">
+                        <a href="" class="icon-social-network">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network">
+                        <a href="" class="icon-social-network">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network">
+                        <a href="" class="icon-social-network">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </footer>
+    </footer>t
 </body>
 </html>
