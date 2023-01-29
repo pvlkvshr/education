@@ -28,7 +28,7 @@
                 <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
-        <nav class="container main-nav-contact">
+        <div class="container main-nav-contact">
             <ul class="site-contact list">
                 <li class="item">
                     <a href="mailto:info@devstudio.com" class="link">
@@ -47,7 +47,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
        </div>
     </header>
     <main>
@@ -104,9 +104,24 @@
             <div class="container skills">
                 <h2 class="section-title portfolio">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="item"><img src="./images/one.jpg" alt="Работа на планшете с клавиатурой" width="370" height="294"></li>
-                    <li class="item"><img src="./images/two.jpg" alt="Работа на ноутбуке" width="370" height="294"></li>
-                    <li class="item"><img src="./images/three.jpg" alt="Работа на планшете" width="370" height="294"></li>
+                    <li class="item">
+                        <img src="./images/one.jpg" class="image" alt="Работа на планшете с клавиатурой" width="370" height="294">
+                        <div class="description-card">
+                            <p class="description-title">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="./images/two.jpg" class="image" alt="Работа на ноутбуке" width="370" height="294">
+                        <div class="description-card">
+                            <p class="description-title">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="./images/three.jpg" class="image" alt="Работа на планшете" width="370" height="294">
+                        <div class="description-card">
+                            <p class="description-title">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -367,8 +382,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p>Text</p>
-            <button data-modal-close>Close</button>
+            <button class="button-modal" data-modal-close>
+                <svg width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
