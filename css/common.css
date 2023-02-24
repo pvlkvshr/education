@@ -225,7 +225,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -233,7 +233,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -308,4 +308,59 @@ body {
 .icon-social-network:hover,
 .icon-social-network:focus {
     background-color: var(--accent-color);
+}
+
+.footer-form {
+    margin-left: 93px;
+}
+
+.follow-form {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+    line-height: 1.14;
+}
+
+.field {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 0px 15px 16px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.6);
+
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+}
+
+.button-footer {
+    padding: 10px 0px 10px 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+
+.footer-form-icon {
+    margin-left: 10px;
+    color: var(--primary-bg-color);
 }
