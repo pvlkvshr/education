@@ -1,0 +1,144 @@
+.header__logo {
+    @extend .logo;
+    
+    display: flex;
+    margin-right: 93px;
+    padding: 25px 0px 25px 0px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    background-color: $primary-bg-color;
+}
+
+.header__container {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header__main-nav {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+}
+
+.header__main-nav-menu {
+    display: flex;
+    padding: 0px 0px 0px 15px;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav__link {
+    padding: 32px 1.5px 32px 1.5px;
+
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &--current {
+        color: $accent-color;
+        position: relative;
+        padding: 32px 1.5px 32px 1.5px;
+        
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+
+    &--current::after {
+        position: absolute;
+        bottom: 0px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+    }
+}
+
+.header__main-nav-contact {
+    display: flex;
+    padding: 0px;
+    justify-content: end;
+}
+
+.site-contact {
+    display: flex;
+}
+
+.site-contact__item {
+    margin: 0px 15px 0px 15px;
+}
+
+.site-contact__item +.item {
+    margin-right: 0px;
+}
+
+.site-contact__link {
+    display: flex;
+    padding: 32px 0px 32px 0px;
+
+    color: $additional-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.site-contact__icon-envelope {
+    margin-right: 10px;
+    fill: $additional-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .site-contact__link:hover &,
+    .site-contact__link:focus & {
+        fill: $accent-color;
+    }
+}
+
+.site-contact__icon-smartphone {
+    margin-right: 10px;
+    fill: $additional-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .site-contact__link:hover &,
+    .site-contact__link:focus & {
+        fill: $accent-color;
+    }
+}

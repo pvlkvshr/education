@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.button {
+  background-color: aqua;
+}
+.button:hover, .button:focus {
+  color: black;
+}
+
+.button {
+  background-color: aqua;
+}
+.box:hover .button, .box:focus .button {
+  color: black;
+}
+
+.list-item {
+  margin-right: 30px;
+}
+.list-item:last-child {
+  margin-right: 0px;
+}
+
+.notification, .notification-succes, .notification-error {
+  background-color: white;
+  font-size: 12;
+  padding: 10px;
+}
+
+.notification-error {
+  background-color: red;
+}
+
+.notification-succes {
+  background-color: green;
+}
+
+.features {
+  padding: 20px;
+  margin: 10px;
+}
+
+.notification-succes, .notification-error {
+  background-color: white;
+  font-size: 12;
+  padding: 10px;
+}
+
+.notification-error {
+  background-color: red;
+}
+
+.notification-succes {
+  background-color: green;
+}
+
+.section {
+  color: blue;
+}
+.section-title {
+  color: teal;
+}
+.section-title--red {
+  color: red;
+}
+.section-text {
+  color: green;
+}
+
+/* Пример миксина  */
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Пример конструкции each*/
+/* .icon-facebook {
+    background-image: url();
+}
+
+.icon-instagram {
+    background-image: url();
+}
+
+.icon-telegram {
+    background-image: url();
+} */
+.icon-facebook {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}
+
+.icon-instagram {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}
+
+.icon-telegram {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}
+
+.icon-facebook {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}
+
+.icon-instagram {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}
+
+.icon-telegram {
+  background-image: url("../images/#($iconName).svg");
+  background-color: teal;
+}/*# sourceMappingURL=examples.css.map */

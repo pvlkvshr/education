@@ -1,0 +1,155 @@
+// Результат тестирования можно увидеть в файле examples.css
+
+// Эффект ховера/фокуса с помощью Амперсатна:
+
+.button {
+    background-color: aqua;
+
+    &:hover, &:focus {
+        color: black;
+    }
+}
+
+// Если нужно сделать эффект ховера на кнопку при наведении на бокс:
+
+.button {
+    background-color: aqua;
+
+    .box:hover &, .box:focus & {
+        color: black;
+    }
+}
+
+// Если нужно убрать марджин на последнем элементе:
+
+.list-item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+// Использование базовых стилей с помощью дерективы @extend, чтобы в html ставить один класс:
+
+.notification {
+    background-color: white;
+    font-size: 12;
+    padding: 10px;
+}
+
+.notification-error {
+    @extend .notification;
+    background-color: red;
+}
+
+.notification-succes {
+    @extend .notification;
+    background-color: green;
+}
+
+// Если нужно сделать общий шаблон для того, чтобы не писать базовый стиль (плейсхолдер):
+
+%list {
+    padding: 20px;
+    margin: 10px;
+}
+
+.features {
+    @extend %list;
+}
+
+
+%notification {
+    background-color: white;
+    font-size: 12;
+    padding: 10px;
+}
+
+.notification-error {
+    @extend %notification;
+    background-color: red;
+}
+
+.notification-succes {
+    @extend %notification;
+    background-color: green;
+}
+
+// Использование селектора конкатенации
+
+// Пример: если нужно добавить к селектору section приставку title или text (в тч. модификатор BEM), делаем следующее:
+
+.section {
+    color: blue;
+    
+    &-title {
+        color: teal;
+
+        &--red {
+            color: red;
+        }
+    }
+
+    &-text {
+        color: green;
+    }
+}
+
+// Амперсант работает только с родителями
+
+/* Пример миксина  */
+
+@mixin centeredFlex($type) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    @include centeredFlex(flex);
+}
+
+div {
+    @include centeredFlex(flex);
+}
+
+button {
+    @include centeredFlex(inline-flex);
+}
+
+/* Пример конструкции each*/
+
+/* .icon-facebook {
+    background-image: url();
+}
+
+.icon-instagram {
+    background-image: url();
+}
+
+.icon-telegram {
+    background-image: url();
+} */
+
+$icons: 'facebook', 'instagram', 'telegram';
+
+@each $iconName in $icons {
+    .icon-#{$iconName} {
+        background-image: url("../images/#($iconName).svg");
+        background-color: teal;
+    }
+}
+
+// Пример конструкции each с миксином, чтобы не дублировать для каждого участка сайта each
+
+@mixin generateIcons($iconList) {
+    @each $iconName in $icons {
+            .icon-#{$iconName} {
+                background-image: url("../images/#($iconName).svg");
+                background-color: teal;
+            }
+        }
+}
+
+@include generateIcons($icons);

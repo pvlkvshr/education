@@ -1,0 +1,53 @@
+.services {
+    @extend %section;
+    padding-top: 0px;
+}
+
+.services__title {
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item {
+    position: relative;
+}
+
+.services__image {
+    display: block;
+}
+
+.services__description {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+}
+
+/* Метод центрирования позиционирования:
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+.services__description-text {
+    padding: 27px 0px 27px 0px;
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+}
