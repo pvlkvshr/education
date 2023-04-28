@@ -1,53 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
-            <nav class="header__main-nav-menu">
-                <a href="./index.html" class="header__logo">
-                    <span class="header__logo--blue">Web</span>
-                    <span class="header__logo--black">Studio</span>
-                </a>
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link--current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="container header__main-nav-contact">
-                <ul class="site-contact">
-                    <li class="site-contact__item">
-                        <a href="mailto:info@devstudio.com" class="site-contact__link">
-                            <svg class="site-contact__icon-envelope" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            ikivshar@mail.ru
-                        </a>
-                    </li>
-                    <li class="site-contact__item">
-                        <a href="tel:+79300615533" class="site-contact__link">
-                            <svg class="site-contact__icon-smartphone" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +7 930 061 55 33
-                        </a>
-                    </li>
-                </ul>
+            <a href="./index.html" class="logo header__logo">
+                <span class="header__logo--blue">Web</span>
+                <span class="header__logo--black">Studio</span>
+            </a>
+            <button type="button" class="menu-button" data-menu-button>
+                <svg class="menu-button__icon" width="40" height="40" aria-expanded="false" aria-label="Переключатель мобильного меню">
+                    <use href="./images/icons.svg#icon-menu" class="menu-button__icon-menu"></use>
+                    <use href="./images/icons.svg#icon-menu-close" class="menu-button__icon-cross"></use>
+                </svg>
+            </button>
+            <div class="header__main-nav-contact" data-menu>
+                <nav class="header__main-nav-menu">
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="site-contact">
+                        <li class="site-contact__item">
+                            <a href="mailto:info@devstudio.com" class="site-contact__link">
+                                <svg class="site-contact__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                ikivshar@mail.ru
+                            </a>
+                        </li>
+                        <li class="site-contact__item">
+                            <a href="tel:+79300615533" class="site-contact__link site-contact__link--size">
+                                <svg class="site-contact__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +7 930 061 55 33
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-links">
+                        <li class="mobile-links__item">
+                            <a href="" class="mobile-links__link">Instagram</a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="" class="mobile-links__link">Twitter</a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="" class="mobile-links__link">Facebook</a>
+                        </li>
+                        <li class="mobile-links__item">
+                            <a href="" class="mobile-links__link">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+    
     <main>
-           <section class="portfolio">
+        <section class="portfolio">
             <div class="container">
                 <h1 class="portfolio__title">Портфолио</h1>
                 <ul class="portfolio__filter">
@@ -59,12 +84,27 @@
                 </ul>
                 <ul class="card-list">
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/laptop.jpg" width="370" height="294" alt="Ноутбук">
+                                <picture>
+                                    <source srcset="./images/laptop-mob.jpg 1x,
+                                                    ./images/laptop-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/laptop-tab.jpg 1x,
+                                                    ./images/laptop-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/laptop.jpg 1x,
+                                                    ./images/laptop@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/laptop-mob.jpg" alt="Ноутбук"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -77,12 +117,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/basketball.jpg" width="370" height="294" alt="Баскетбол">
+                                <picture>
+                                    <source srcset="./images/basketball-mob.jpg 1x,
+                                                    ./images/basketball-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/basketball-tab.jpg 1x,
+                                                    ./images/basketball-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/basketball.jpg 1x,
+                                                    ./images/basketball@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/basketball-mob.jpg" alt="Баскетбол"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -95,12 +150,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/restaurant-logo.jpg" width="370" height="294" alt="Ресторан">
+                                <picture>
+                                    <source srcset="./images/restaurant-logo-mob.jpg 1x,
+                                                    ./images/restaurant-logo-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/restaurant-logo-tab.jpg 1x,
+                                                    ./images/restaurant-logo-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/restaurant-logo.jpg 1x,
+                                                    ./images/restaurant-logo@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/restaurant-logo-mob.jpg" alt="Ресторан"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -113,12 +183,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/headset.jpg" width="370" height="294" alt="Наушники">
+                                <picture>
+                                    <source srcset="./images/headset-mob.jpg 1x,
+                                                    ./images/headset-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/headset-tab.jpg 1x,
+                                                    ./images/headset-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/headset.jpg 1x,
+                                                    ./images/headset@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/headset-mob.jpg" alt="Наушники"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -131,12 +216,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/boxes.jpg" width="370" height="294" alt="Ящики">
+                                <picture>
+                                    <source srcset="./images/boxes-mob.jpg 1x,
+                                                    ./images/boxes-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/boxes-tab.jpg 1x,
+                                                    ./images/boxes-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/boxes.jpg 1x,
+                                                    ./images/boxes@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/boxes-mob.jpg" alt="Ящики"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -149,12 +249,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/screen.jpg" width="370" height="294" alt="Монитор">
+                                <picture>
+                                    <source srcset="./images/screen-mob.jpg 1x,
+                                                    ./images/screen-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/screen-tab.jpg 1x,
+                                                    ./images/screen-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/screen.jpg 1x,
+                                                    ./images/screen@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/screen-mob.jpg" alt="Монитор"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -167,12 +282,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/journal.jpg" width="370" height="294" alt="Журнал">
+                                <picture>
+                                    <source srcset="./images/journal-mob.jpg 1x,
+                                                    ./images/journal-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/journal-tab.jpg 1x,
+                                                    ./images/journal-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/journal.jpg 1x,
+                                                    ./images/journal@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/journal-mob.jpg" alt="Журнал"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -185,12 +315,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/label.jpg" width="370" height="294" alt="Этикетка">
+                                <picture>
+                                    <source srcset="./images/label-mob.jpg 1x,
+                                                    ./images/label-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/label-tab.jpg 1x,
+                                                    ./images/label-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/label.jpg 1x,
+                                                    ./images/label@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/label-mob.jpg" alt="Этикетка"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -203,12 +348,27 @@
                         </a>
                     </li>
                     <li class="card-list__item">
-                        <a href="">
+                        <a href="" class="card-list__link">
                             <div class="card-list__wrap">
-                                <img class="card-list__image" src="./images/printing.jpg" width="370" height="294" alt="Печатание на ноутбуке">
+                                <picture>
+                                    <source srcset="./images/printing-mob.jpg 1x,
+                                                    ./images/printing-mob@2x.jpg 2x"
+                                            media="(max-width: 767px)"
+                                            sizes="100vw"/>
+                                    <source srcset="./images/printing-tab.jpg 1x,
+                                                    ./images/printing-tab@2x.jpg 2x"
+                                            media="(min-width: 768px) and (max-width: 1199px)"
+                                            sizes="50vw"/>
+                                    <source srcset="./images/printing.jpg 1x,
+                                                    ./images/printing@2x.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            sizes="25vw"/>
+                                    <img class="card-list__image" src="./images/printing-mob.jpg" alt="Печатание на ноутбуке"/>
+                                </picture>
                                 <div class="card-list__description">
                                     <p>
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                        это позволит посетителю
                                         получить
                                         исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -222,59 +382,62 @@
                     </li>
                 </ul>
             </div>
-           </section>
+        </section>
     </main>
+
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__contact">
-                <a href="./index.html" class="footer__logo">
-                    <span class="footer__logo--blue">Web</span>
-                    <span class="footer__logo--white">Studio</span>
-                </a>
-                <ul class="footer__adress-list">
-                    <li class="footer__adress-item">
-                        <p>г. Усинск, ул. Парковая, д. 6</p>
-                    </li>
-                    <li class="footer__adress-item">
-                        <a href="mailto:ikivshar@mail.ru" class="footer__adress-link">ikivshar@mail.ru</a>
-                    </li>
-                    <li class="footer__adress-item">
-                        <a href="tel:+79300615533" class="footer__adress-link">+7 930 061 5533</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-follow">
-                <p class="footer-follow__slogan">Присоединяйтесь</p>
-                <ul class="footer-follow__list">
-                    <li>
-                        <a href="" class="footer-follow__link">
-                            <svg class="footer-follow__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-follow__link">
-                            <svg class="footer-follow__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-follow__link">
-                            <svg class="footer-follow__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-follow__link">
-                            <svg class="footer-follow__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container footer__container">
+            <div class="footer__wrap">
+                <div class="footer__contact">
+                    <a href="./index.html" class="logo footer__logo">
+                        <span class="footer__logo--blue">Web</span>
+                        <span class="footer__logo--white">Studio</span>
+                    </a>
+                    <ul class="footer__adress-list">
+                        <li class="footer__adress-item">
+                            <p>г. Усинск, ул. Парковая, д. 6</p>
+                        </li>
+                        <li class="footer__adress-item">
+                            <a href="mailto:ikivshar@mail.ru" class="footer__adress-link">ikivshar@mail.ru</a>
+                        </li>
+                        <li class="footer__adress-item">
+                            <a href="tel:+79300615533" class="footer__adress-link">+7 930 061 5533</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-follow">
+                    <p class="footer-follow__slogan">Присоединяйтесь</p>
+                    <ul class="footer-follow__list">
+                        <li>
+                            <a href="" class="footer-follow__link">
+                                <svg class="footer-follow__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-follow__link">
+                                <svg class="footer-follow__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-follow__link">
+                                <svg class="footer-follow__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-follow__link">
+                                <svg class="footer-follow__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form class="footer-form">
                 <p class="footer-form__slogan">Подпишитесь на рассылку</p>
@@ -287,5 +450,8 @@
             </form>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>
